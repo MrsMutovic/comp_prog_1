@@ -1,6 +1,5 @@
 import check50
-import check50.py
-import os
+
 
 @check50.check()
 def exists():
