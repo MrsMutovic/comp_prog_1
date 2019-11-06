@@ -24,7 +24,7 @@ def factorial1():
     check50.run("python3 factorial.py").stdin("1").stdout("1").exit(0)
 
 @check50.check(exists)
-def factoroal5();
+def factoroal5():
      """factorial for 5"""
     check50.run("python3 factorial.py").stdin("5").stdout("120").exit(0)
 
