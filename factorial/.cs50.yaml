@@ -1,1 +1,24 @@
-
+check50:
+  checks:
+    factorial:
+      - run: python3 factorial.py # run python3 hello.py
+        stdin: 0
+        stdout: 1 # expect Hello, world! in stdout
+        exit: 0 # expect program to exit with exitcode 0
+      - run: python3 factorial.py # run python3 foo.py
+        stdin: 1 # insert baz into stdin
+        stdout: 1 # expect baz in stdout
+        exit: 0 # expect program to exit with exitcode 0
+      - run: python3 factorial.py # run python3 bar.py
+        stdin: baz # insert baz into stdin
+        stdout: bar baz # expect bar baz in stdout
+      - run: python3 factorial.py # run python3 bar.py
+        stdin:
+          - 5 # insert baz into stdin
+        stdout:
+          - 120 # first expect bar baz in stdout
+      - run: python3 factorial.py # run python3 bar.py
+        stdin:
+          - 15 # insert baz into stdin
+        stdout:
+          - 1307674368000 # first expect bar baz in stdout
