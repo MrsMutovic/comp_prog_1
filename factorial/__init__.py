@@ -5,6 +5,7 @@ import check50
 def exists():
     """factorial.py exists"""
     check50.exists("factorial.py")
+
 @check50.check(exists)
 
 
