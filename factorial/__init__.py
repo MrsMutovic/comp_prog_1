@@ -10,7 +10,7 @@ def exists():
 def rejectneg():
     """rejects negative numbers"""
     from re import match
-    expected = "Please enter a non-negative number"
+    expected = "Please enter a non-negative number: "
     actual = check50.run("python3 factorial.py").stdin("-5", prompt=False).stdout()
     if not match(expected, actual):
         help = None
