@@ -25,10 +25,10 @@ def factorial1():
 
 @check50.check(exists)
 def factoroal5():
-     """factorial for 5"""
+    """factorial for 5"""
     check50.run("python3 factorial.py").stdin("5").stdout("120").exit(0)
 
 @check50.check(exists)
 def factorial15():
-     """factorial for 15"""
+    """factorial for 15"""
     check50.run("python3 factorial.py").stdin("15").stdout("1307674368000").exit(0)
